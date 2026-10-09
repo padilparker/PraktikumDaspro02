@@ -33,23 +33,7 @@ public class StudiKasus202 {
             } else {
                 pesan = "Status : Bukan juara. Dana penghargaan tidak diberikan.";
             }
-        } else if (jenisKegiatan.equalsIgnoreCase("PKM")) {
-            System.out.print("Jumlah dokumen :");
-            jumlahDokumen = sc.nextInt();
-            System.out.print("Jumlah juara :");
-            peringkatJuara = sc.nextInt();
-            if (peringkatJuara == 1) {
-                if (jumlahDokumen < 4) {
-                    jumlahDokumen = 4 - jumlahDokumen;
-                    pesan = "Status : Dokumen tidak lengkap (kurang " + jumlahDokumen
-                            + " dokumen) dana penghargaan tidak diberikan";
-                } else {
-                    pesan = "Status : Dokumen lengkap, dana diberikan.";
-                }
-            } else {
-                pesan = "Status : Bukan juara. Dana penghargaan tidak diberikan.";
-            }
-        } else {
+        }else {
             pesan = "Status : Tidak ada kegiatan";
         }
         
