@@ -1,3 +1,11 @@
+/* Untuk Studi kasus
+Nomor absen saya adalah 2
+p = 2
+rumus = (p mod 6) = 2
+hargaPerCup = 15000 + (2 mod 6) × 1000 = 17.000
+Syarat minimal belanja untuk diskon = 80000 + (2 mod 5) × 10000 = 100.000
+Persentase diskon = 5 + (2 mod 6) % = 7%  */
+
 Ini adalah repository pertama saya
 Nama  : Achmad Fadhil Izzuddin Attamimi
 Nim   : 264107020017
