@@ -1,4 +1,5 @@
 package Pertemuan7;
+
 /* Nomor absen saya adalah 2
 p = 2
 rumus = (p mod 6) = 2
