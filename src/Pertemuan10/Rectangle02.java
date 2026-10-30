@@ -18,3 +18,4 @@ public class Rectangle02 {
         }
     }
 }
+//jawaban untuk comit percobaan 2 pertanyaan 5
