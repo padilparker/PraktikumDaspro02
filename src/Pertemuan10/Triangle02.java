@@ -19,3 +19,4 @@ public class Triangle02 {
         }
     }
 }
+// jawaban untuk comit pertanyaan 5 percobaan 2
