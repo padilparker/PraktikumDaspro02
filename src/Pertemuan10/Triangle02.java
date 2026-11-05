@@ -10,6 +10,7 @@ public class Triangle02 {
         int n = sc.nextInt();
         int i = 0;
         while (i <= n) {
+            System.out.print("[i=" + i + "] "); // debug sementara
             int j = 0;
             while (j < i) {
                 System.out.print("*");
@@ -19,4 +20,4 @@ public class Triangle02 {
         }
     }
 }
-// kode asli 
+// kode asli
