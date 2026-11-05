@@ -12,7 +12,6 @@ public class Triangle02 {
         int i = 1;
 
         while (i <= n) {
-            System.out.print("[i=" + i + "] "); // debug sementara
             int j = 0;
 
             while (j < i) {
@@ -23,5 +22,6 @@ public class Triangle02 {
             System.out.println();
             i++;
         }
+
     }
 }
