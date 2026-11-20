@@ -5,7 +5,6 @@ import java.util.Scanner;
 public class SearchNilai02 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-
         System.out.print("Masukkan banyaknya elemen array: ");
         int jmlElemen = sc.nextInt();
 
@@ -31,7 +30,7 @@ public class SearchNilai02 {
         }
         
         if (!ditemukan) {
-            System.out.println("Nilai " + key + " tidak ditemukan.");
+            System.out.println("Maaf, nilai " + key + " tidak ditemukan di dalam array yang berisi " + jmlElemen + " elemen tersebut.");
         }
     }
 }
