@@ -1,13 +1,9 @@
 package Pertemuan12;
 
-//60 + (P mod 41) menggunakan nomer absen 2
-
 import java.util.Scanner;
 
 public class ArrayNilai02 {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-
         int[] nilaiAkhir = new int[10];
         Scanner input = new Scanner(System.in);
 
@@ -15,10 +11,12 @@ public class ArrayNilai02 {
             System.out.print("Masukkan nilai mahasiswa ke-" + (i + 1) + ": ");
             nilaiAkhir[i] = input.nextInt();
         }
+
+        System.out.println("\n--- DAFTAR MAHASISWA YANG LULUS ---");
         for (int i = 0; i < nilaiAkhir.length; i++) {
-            String status = (nilaiAkhir[i] > 62) ? "LULUS" : "TIDAK LULUS";
-            System.out.println("Mahasiswa ke-" + (i + 1) + ": " + nilaiAkhir[i] + " (" +
-                    status + ")");
+            if (nilaiAkhir[i] > 70) {
+                System.out.println("Mahasiswa ke-" + (i + 1) + ": " + nilaiAkhir[i] + " (LULUS)");
+            }
         }
     }
 }
