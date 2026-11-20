@@ -10,15 +10,22 @@ public class ArrayRataNilai02 {
         int total = 0;
         double rata2;
         String predikatKelas;
+        int jumlahLulus = 0; 
 
         for (int i = 0; i < nilaiMhs.length; i++) {
             System.out.print("Masukkan nilai mahasiswa ke-" + (i + 1) + ": ");
             nilaiMhs[i] = sc.nextInt();
             total += nilaiMhs[i];
+            
+            if (nilaiMhs[i] > 70) {
+                jumlahLulus++;
+            }
         }
+        
         rata2 = (double) total / nilaiMhs.length;
         System.out.println("Total nilai: " + total);
         System.out.println("Rata-rata: " + rata2);
+        
         if (rata2 >= 85) {
             predikatKelas = "SANGAT BAIK";
         } else if (rata2 >= 70) {
@@ -35,9 +42,10 @@ public class ArrayRataNilai02 {
             if (nilaiMhs[i] < terendah)
                 terendah = nilaiMhs[i];
         }
+        
         System.out.println("Nilai tertinggi: " + tertinggi);
         System.out.println("Nilai terendah: " + terendah);
         System.out.println("Predikat Kelas: " + predikatKelas);
+        System.out.println("Jumlah mahasiswa yang lulus (> 70): " + jumlahLulus);
     }
-
 }
