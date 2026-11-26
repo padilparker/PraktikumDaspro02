@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class BioskopWithScanner02 {
     public static void main(String[] args) {
-       Scanner sc = new Scanner(System.in);
+      Scanner sc = new Scanner(System.in);
         int baris, kolom, menu;
         String nama, pilihan;
         String[][] penonton = new String[4][2];
@@ -57,7 +57,8 @@ public class BioskopWithScanner02 {
                     System.out.println("\nDaftar Penonton:");
                     for (int i = 0; i < penonton.length; i++) {
                         for (int j = 0; j < penonton[i].length; j++) {
-                            System.out.print(penonton[i][j] + "\t");
+                            String isi = (penonton[i][j] == null) ? "***" : penonton[i][j];
+                            System.out.print(isi + "\t");
                         }
                         System.out.println();
                     }
