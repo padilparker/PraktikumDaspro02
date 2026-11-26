@@ -9,6 +9,10 @@ public class Numbers02 {
         myNumbers[1] = new int[3];
         myNumbers[2] = new int[1];
 
-        System.out.println(Arrays.toString(myNumbers));
+        for (int i = 0; i < myNumbers.length; i++) {
+            System.out.println(Arrays.toString(myNumbers[i]));
+        }
+
+        System.out.println(Arrays.deepToString(myNumbers));
     }
 }
