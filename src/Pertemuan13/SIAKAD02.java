@@ -5,10 +5,22 @@ import java.util.Scanner;
 public class SIAKAD02 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        int[][] nilai = new int[4][3];
+
+        int jmlMhs, jmlMk;
+        do {
+            System.out.print("Jumlah mahasiswa: ");
+            jmlMhs = sc.nextInt();
+        } while (jmlMhs <= 0);
+
+        do {
+            System.out.print("Jumlah mata kuliah: ");
+            jmlMk = sc.nextInt();
+        } while (jmlMk <= 0);
+
+        int[][] nilai = new int[jmlMhs][jmlMk];
 
         for (int i = 0; i < nilai.length; i++) {
-            System.out.println("Input nilai mahasiswa ke-" + (i + 1));
+            System.out.println("\nInput nilai mahasiswa ke-" + (i + 1));
             double totalPerSiswa = 0;
 
             for (int j = 0; j < nilai[i].length; j++) {
