@@ -35,6 +35,9 @@ public class BioskopWithScanner02 {
                                 System.out.println("Baris " + baris + " tidak tersedia! Silakan ulangi.");
                             } else if (kolom < 1 || kolom > penonton[baris - 1].length) {
                                 System.out.println("Kolom " + kolom + " tidak tersedia! Silakan ulangi.");
+                            } else if (penonton[baris - 1][kolom - 1] != null) {
+                                System.out.println("Kursi sudah terisi oleh "
+                                        + penonton[baris - 1][kolom - 1] + "! Pilih kursi lain.");
                             } else {
                                 break;
                             }
